@@ -1,6 +1,6 @@
 # Aqueducts
 
-A theme for SublimeText2.
+A theme for SublimeText2 and TextMate.
 
 <img src="http://f.cl.ly/items/0u023Q2i0b3E3c313L1E/sublime-aqueducts.png">
 
