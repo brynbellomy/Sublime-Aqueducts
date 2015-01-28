@@ -1,0 +1,475 @@
+
+colors:
+  darkBlueSea: '#003448'
+  goldenrod: '#f3c542'
+  goldenrod2: '#d2aa5d'
+  goldenrod3: '#b39150'
+  grey: '#56707A'
+  periwinkle: '#A36BCE'
+  turquoise1: '#75a1b3'
+  turquoise2: '#62aeb3'
+  x: '#CCA084'
+name: Aqueducts-3.0
+settings:
+
+- settings:
+    background      : '#0A171B'
+    caret           : '#FF8D3D'
+    foreground      : '#2d7387'
+    invisibles      : '#BFBFBF'
+    lineHighlight   : '#0085b777'
+    selection       : '#9E9E9E'
+    x background    : '#002734'
+    x caret         : '#FFFFFF'
+    x foreground    : '#B3B39A'
+    x invisibles    : '#CAE2FB3D'
+    x lineHighlight : '#FFFFFF24'
+    x selection     : '#333333'
+    xx foreground   : '#ECF0C1'
+
+
+#
+# misc.
+#
+
+- { scope: string.name.directory.dired, settings: { foreground: '#9fdaf6'} }
+- { scope: string.name.file.dired     , settings: { foreground: '#436575'} }
+- { scope: item.modified.dired        , settings: { foreground: '#7876e5'} }
+- { scope: item.untracked.dired       , settings: { foreground: '#9e1c27'} }
+
+
+
+#
+# comment
+#
+
+- { scope: comment, settings: { fontStyle: italic, foreground: '#56707A'} }
+- { scope: comment.block, settings: { background: '#052029' } }
+
+
+
+#
+# meta
+#
+
+- { scope: meta.return-type,               settings: { foreground: '#bce1ff' } }
+- { scope: meta.import storage.modifier,   settings: { foreground: '#bce1ff' } }
+- { scope: meta.method-call,               settings: { foreground: '#2d9ac9' } }
+- { scope: meta.method-call.argument.name, settings: { foreground: '#6bb5d9' } }
+- { scope: meta.function-call.argument.name, settings: { foreground: '#3cc4c0' } }
+- { scope: meta.block,                     settings: { background: '#0A171B' } }
+
+# language-specific
+- { scope: meta.function.objc,             settings: { background: '#0085b750' } }
+
+
+
+
+#
+# entity
+#
+
+
+#
+# bright blue is #9fdaf6
+#
+
+- { scope: entity,                             settings: { foreground: '#62aeb3' } }
+- { scope: entity.name.type,                   settings: { foreground: '#6eaace' } }
+- { scope: entity.name.type.generic,                   settings: { foreground: '#73aea9' } }
+- { scope: entity.name.type.class,             settings: { foreground: '#63c1c4' } } # #34989d
+- { scope: entity.name.type.generic-parameter, settings: { foreground: '#3594cc' } }
+- { scope: entity.name.function,               settings: { foreground: '#73aea9' } }
+- { scope: entity.name.function.parameter,     settings: { foreground: '#436575', xforeground: '#609da6' } }
+- { scope: entity.name.variable,               settings: { foreground: '#436575' } }
+
+- scope: meta.variable.declaration entity.name.variable
+  settings: { foreground: '#6eaace' }
+  # bce1ff
+  # settings: { foreground: '#6597dc' }
+  # settings: { foreground: '#67a9a2' }
+
+
+#
+# support
+#
+# foreground: '#DAD085'
+- { scope: support,          settings: { foreground: '#d2aa5d' } }
+- { scope: support.class,    settings: { foreground: '#27c2c2' } }
+- { scope: support.function, settings: { foreground: '#81bcd6' } }
+- { scope: support.constant, settings: { foreground: '#cca084' } }
+
+
+
+#
+# keyword
+#
+
+# foreground: '#eb6b9d'
+- { scope: keyword,                settings: { foreground: '#bce1ff' } }
+- { scope: keyword.meta,           settings: { foreground: '#c65884' } }
+- { scope: keyword.declaration,    settings: { foreground: '#c65884' } }
+- { scope: keyword.control,        settings: { foreground: '#c65884' } }
+- { scope: keyword.control.import, settings: { foreground: '#8081cd' } }
+- { scope: keyword.variable,       settings: { foreground: '#c45965' } }
+- { scope: keyword.operator,       settings: { foreground: '#6b675b' } }
+
+
+
+#
+# punctuation
+#
+
+- { scope: punctuation,                             settings: { foreground: '#6b675b' } }
+- { scope: punctuation.keyword.meta,                settings: { foreground: '#c65884' } }
+# - { scope: punctuation.generic-type.parameter-list, settings: { foreground: '#9fdaf6' } }
+- { scope: punctuation.definition.comment,          settings: { foreground: '#56707A' } }
+- { scope: punctuation.definition.string,           settings: { foreground: '#c45965' } }
+- { scope: punctuation.definition.string,           settings: { foreground: '#c45965' } }
+- { scope: "entity.name.type.tuple, punctuation.definition.tuple", settings: { foreground: '#6eaace' } }
+
+
+#
+# storage
+#
+- { scope: storage,                 settings: { foreground: '#CFCB90' } }
+- { scope: storage.modifier,        settings: { foreground: '#c65884' } }
+- { scope: storage.type,            settings: { foreground: '#bce1ff' } }
+- { scope: storage.type.function,   settings: { foreground: '#c65884' } }
+- { scope: storage.type.annotation, settings: { foreground: '#CFCB90' } }
+
+
+#
+# constant
+#
+
+- { scope: constant, settings: { foreground: '#A36BCE' } }
+- { scope: constant.numeric, settings: { foreground: '#786dff' } }
+- { scope: 'string, constant.string', settings: { foreground: '#ac5959' } }
+# - { scope: string, settings: { foreground: '#ac5959' } }
+
+- name: Constant -> name -> attribute
+  scope: constant.name.attribute
+  settings:
+    foreground: '#BFBF8A'
+
+
+- name: Meta.brace
+  scope: meta.brace
+  settings:
+    foreground: '#6b675b'
+
+
+- name: String comment
+  scope: string.comment
+  settings:
+    background: '#052029'
+    fontStyle: italic
+    foreground: '#56707A'
+
+
+
+
+
+- name: Variable
+  scope: xvariable.language
+  settings:
+    foreground: '#c66576'
+
+- name: Variable
+  scope: variable
+  settings:
+    foreground: '#62aeb3'
+    xforeground: '#A5A4FF'
+
+- name: "Invalid \u2013 Deprecated"
+  scope: invalid.deprecated
+  settings:
+    fontStyle: italic underline
+    foreground: '#FD5FF1'
+
+- name: "Invalid \u2013 Illegal"
+  scope: invalid.illegal
+  settings:
+    background: '#562D56BF'
+    foreground: '#FD5FF1'
+
+- name: '-----------------------------------'
+  settings: {}
+
+- name: Embedded Source (Bright)
+  scope: text source
+  settings:
+    background: '#B1B3BA08'
+    fontStyle: ''
+
+
+- name: String embedded-variable
+  scope: string meta.expression
+  settings:
+    fontStyle: ''
+    foreground: '#00A0A0'
+
+- name: String punctuation
+  scope: source string source punctuation.section.embedded
+  settings:
+    fontStyle: ''
+    foreground: '#00A0A0'
+
+# - name: String constant
+#   scope: string.constant
+#   settings:
+#     fontStyle: ''
+#     foreground: '#00A0A0'
+
+- name: String.regexp
+  scope: string.regexp
+  settings:
+    foreground: '#E9C062'
+
+- name: "String.regexp.\xABspecial\xBB"
+  scope: string.regexp constant.character.escape, string.regexp source.ruby.embedded,
+    string.regexp string.regexp.arbitrary-repitition
+  settings:
+    fontStyle: ''
+    foreground: '#FF8000'
+
+- name: String.regexp.group
+  scope: string.regexp.group
+  settings:
+    background: '#FFFFFF0F'
+    fontStyle: ''
+    foreground: '#C6A24F'
+
+- name: String.regexp.character-class
+  scope: string.regexp.character-class
+  settings:
+    fontStyle: ''
+    foreground: '#B18A3D'
+
+- name: String variable
+  scope: string.variable
+  settings:
+    fontStyle: ''
+    foreground: '#8A9A95'
+
+
+- name: c C/C++ Preprocessor Line
+  scope: meta.preprocessor.c
+  settings:
+    foreground: '#8081cd'
+    xforeground: '#8996A8'
+
+- name: c C/C++ Preprocessor Directive
+  scope: meta.preprocessor.c keyword
+  settings:
+    fontStyle: ''
+    foreground: '#AFC4DB'
+
+- name: j Cast
+  scope: meta.cast
+  settings:
+    fontStyle: italic
+    foreground: '#676767'
+
+- name: "\u2718 Doctype/XML Processing"
+  scope: meta.sgml.html meta.doctype, meta.sgml.html meta.doctype entity, meta.sgml.html
+    meta.doctype string, meta.xml-processing, meta.xml-processing entity, meta.xml-processing
+    string
+  settings:
+    foreground: '#494949'
+
+- name: "\u2718 Meta.tag.\xABall\xBB"
+  scope: meta.tag, meta.tag entity
+  settings:
+    foreground: '#bce1ff'
+
+- name: "\u2718 Meta.tag.inline"
+  scope: source entity.name.tag, source entity.other.attribute-name, meta.tag.inline,
+    meta.tag.inline entity
+  settings:
+    fontStyle: ''
+    foreground: '#bce1ff'
+
+- name: "\u2718 Meta.tag.attribute-name"
+  scope: entity.other.attribute-name
+  settings:
+    fontStyle: ''
+    foreground: '#FFD7B1'
+
+- name: "\u2718 Namespaces"
+  scope: entity.name.tag.namespace, entity.other.attribute-name.namespace
+  settings:
+    fontStyle: ''
+    foreground: '#E18964'
+
+- name: "\xA7 css tag-name"
+  scope: meta.selector.css entity.name.tag
+  settings:
+    fontStyle: underline
+    foreground: '#bce1ff'
+
+- name: "\xA7 css:pseudo-class"
+  scope: meta.selector.css entity.other.attribute-name.tag.pseudo-class
+  settings:
+    fontStyle: ''
+    foreground: '#8F9D6A'
+
+- name: "\xA7 css#id"
+  scope: meta.selector.css entity.other.attribute-name.id
+  settings:
+    fontStyle: ''
+    foreground: '#8B98AB'
+
+- name: "\xA7 css.class"
+  scope: meta.selector.css entity.other.attribute-name.class
+  settings:
+    fontStyle: ''
+    foreground: '#62B1FE'
+
+- name: "\xA7 css property-name:"
+  scope: support.type.property-name.css
+  settings:
+    foreground: '#EDEDED'
+
+- name: "\xA7 css property-value;"
+  scope: meta.property-group support.constant.property-value.css, meta.property-value
+    support.constant.property-value.css
+  settings:
+    fontStyle: ''
+    foreground: '#F9EE98'
+
+- name: "\xA7 css @at-rule"
+  scope: meta.preprocessor.at-rule keyword.control.at-rule
+  settings:
+    foreground: '#8693A5'
+
+- name: "\xA7 css additional-constants"
+  scope: meta.property-value support.constant.named-color.css, meta.property-value
+    constant
+  settings:
+    fontStyle: ''
+    foreground: '#87C38A'
+
+- name: "\xA7 css constructor.argument"
+  scope: meta.constructor.argument.css
+  settings:
+    foreground: '#8F9D6A'
+
+- name: "\u2387 diff.header"
+  scope: meta.diff, meta.diff.header
+  settings:
+    background: '#0E2231'
+    fontStyle: italic
+    foreground: '#F8F8F8'
+
+- name: "\u2387 diff.deleted"
+  scope: markup.deleted
+  settings:
+    background: '#420E09'
+    foreground: '#F8F8F8'
+
+- name: "\u2387 diff.changed"
+  scope: markup.changed
+  settings:
+    background: '#4A410D'
+    foreground: '#F8F8F8'
+
+- name: "\u2387 diff.inserted"
+  scope: markup.inserted
+  settings:
+    background: '#253B22'
+    foreground: '#F8F8F8'
+
+- name: '--------------------------------'
+  settings: {}
+
+- name: 'Markup: Italic'
+  scope: markup.italic
+  settings:
+    fontStyle: italic
+    foreground: '#E9C062'
+
+- name: 'Markup: Bold'
+  scope: markup.bold
+  settings:
+    fontStyle: bold
+    foreground: '#E9C062'
+
+- name: 'Markup: Underline'
+  scope: markup.underline
+  settings:
+    fontStyle: underline
+    foreground: '#E18964'
+
+- name: 'Markup: Quote'
+  scope: markup.quote
+  settings:
+    background: '#FEE09C12'
+    fontStyle: italic
+    foreground: '#E1D4B9'
+
+- name: 'Markup: Heading'
+  scope: markup.heading, markup.heading entity
+  settings:
+    background: '#632D04'
+    fontStyle: ''
+    foreground: '#FEDCC5'
+
+- name: 'Markup: List'
+  scope: markup.list
+  settings:
+    foreground: '#E1D4B9'
+
+- name: 'Markup: Raw'
+  scope: markup.raw
+  settings:
+    background: '#B1B3BA08'
+    fontStyle: ''
+    foreground: '#578BB3'
+
+- name: 'Markup: Comment'
+  scope: markup comment
+  settings:
+    fontStyle: italic
+    foreground: '#F67B37'
+
+- name: 'Markup: Separator'
+  scope: meta.separator
+  settings:
+    background: '#242424'
+    foreground: '#60A633'
+
+- name: Log Entry
+  scope: meta.line.entry.logfile, meta.line.exit.logfile
+  settings:
+    background: '#EEEEEE29'
+
+- name: Log Entry Error
+  scope: meta.line.error.logfile
+  settings:
+    background: '#751012'
+uuid: D039AEA9-9DD2-4237-A963-E84494B0B3FB
+
+
+
+
+
+
+# - name: Storage.type.annotation.variable_name
+#   scope: xstorage.type.annotation.variable_name
+#   settings:
+#     fontStyle: italic
+#     foreground: '#56707A'
+
+# - name: Storage.type.annotation.variable_type
+#   scope: xstorage.type.annotation.variable_type
+#   settings:
+#     fontStyle: xbold
+#     foreground: '#B3B39A'
+
+# - name: Storage.type.annotation.description
+#   scope: xstorage.type.annotation.description
+#   settings:
+#     fontStyle: ''
+#     foreground: '#56707A'
