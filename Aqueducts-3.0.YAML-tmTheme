@@ -94,7 +94,9 @@ settings:
 # support
 #
 # foreground: '#DAD085'
-- { scope: support,          settings: { foreground: '#d2aa5d' } }
+# - { scope: support,          settings: { foreground: '#d2aa5d' } }
+- { scope: support,          settings: { foreground: '#65B4FF' } }
+- { scope: support.type,     settings: { foreground: '#27c2c2' } }
 - { scope: support.class,    settings: { foreground: '#27c2c2' } }
 - { scope: support.function, settings: { foreground: '#81bcd6' } }
 - { scope: support.constant, settings: { foreground: '#cca084' } }

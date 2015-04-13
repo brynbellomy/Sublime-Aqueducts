@@ -266,7 +266,16 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#d2aa5d</string>
+				<string>#65B4FF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#27c2c2</string>
 			</dict>
 		</dict>
 		<dict>
