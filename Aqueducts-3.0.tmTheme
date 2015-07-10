@@ -395,15 +395,6 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>tag.decorator.js entity.name.tag.js</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#658F7A</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
 			<string>support</string>
 			<key>settings</key>
 			<dict>
@@ -494,15 +485,6 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>keyword.control.import</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#9466CB</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
 			<string>keyword.variable</string>
 			<key>settings</key>
 			<dict>
@@ -522,6 +504,24 @@
 		<dict>
 			<key>scope</key>
 			<string>keyword.other.unit</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.control.import</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.other.import</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -859,6 +859,24 @@
 			<dict>
 				<key>foreground</key>
 				<string>#518A9D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>entity.name.function.decorator.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#658F7A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>tag.decorator.js entity.name.tag.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#658F7A</string>
 			</dict>
 		</dict>
 		<dict>

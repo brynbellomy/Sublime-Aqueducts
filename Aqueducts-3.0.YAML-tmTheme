@@ -157,7 +157,6 @@ settings:
 - { scope: entity.name.tag.js, settings: { foreground: *c-blue-3 } }
 - { scope: entity.other.attribute-name.js, settings: { foreground: *c-blue-2 } }
 - { scope: meta.tag.attribute-name.js, settings: { foreground: *c-blue-2 } }
-- { scope: tag.decorator.js entity.name.tag.js, settings: { foreground: *c-green-light } }
 
 
 #
@@ -181,10 +180,11 @@ settings:
 - { scope: keyword.declaration,    settings: { foreground: *c-red-dark } }
 - { scope: keyword.function,       settings: { foreground: *c-yellow-dark } }
 - { scope: keyword.control,        settings: { foreground: *c-red-dark } }
-- { scope: keyword.control.import, settings: { foreground: *c-purple-dark } }
 - { scope: keyword.variable,       settings: { foreground: *c-red-dark } }
 - { scope: keyword.operator,       settings: { foreground: *c-white-dark } }
 - { scope: keyword.other.unit,     settings: { foreground: *c-white-dark } }
+- { scope: keyword.control.import, settings: { foreground: *c-white-dark } }
+- { scope: keyword.other.import, settings: { foreground: *c-white-dark } }
 
 # 'self' / 'this'
 #     -> swift/objc
@@ -260,10 +260,14 @@ settings:
 
 
 #
-# language-specific overrides
+# decorators
 #
 
-# - { scope: 'source.js variable', settings: { foreground: '#2d7387' } }
+# python
+- { scope: entity.name.function.decorator.python, settings: { foreground: *c-green-light } }
+
+# js/typescript
+- { scope: tag.decorator.js entity.name.tag.js, settings: { foreground: *c-green-light } }
 
 
 
