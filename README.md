@@ -15,7 +15,7 @@ There are minor customizations for individual languages that try to smooth over 
 
 <img src="./screenshot-typescript-jsx-react.png">
 
-##### Swift (using a Swift syntax I'm slowly working on but haven't released):
+##### Swift (using a syntax I'm slowly working on but haven't released):
 
 <img src="./screenshot-swift.png">
 
