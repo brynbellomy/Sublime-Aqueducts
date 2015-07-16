@@ -7,19 +7,19 @@
 		<string>#0A171B</string>
 		<string>#052029</string>
 		<string>#2d7387</string>
+		<string>#2E505C</string>
 		<string>#518A9D</string>
 		<string>#75a1b3</string>
 		<string>#94B8D7</string>
-		<string>#658F7A</string>
-		<string>#415948</string>
-		<string>#436575</string>
+		<string>#667E6A</string>
+		<string>#667E6A</string>
 		<string>#BA7F98</string>
 		<string>#854147</string>
 		<string>#d2aa5d</string>
 		<string>#B0A385</string>
 		<string>#FF8D3D</string>
 		<string>#A36BCE</string>
-		<string>#9466CB</string>
+		<string>#866CA4</string>
 		<string>#bce1ff</string>
 		<string>#6b675b</string>
 	</array>
@@ -54,11 +54,11 @@
 				<key>caret</key>
 				<string>#FF8D3D</string>
 				<key>foreground</key>
-				<string>#2d7387</string>
+				<string>#2E505C</string>
 				<key>invisibles</key>
 				<string>#BFBFBF</string>
 				<key>lineHighlight</key>
-				<string>#0085b777</string>
+				<string>#0085b733</string>
 				<key>selection</key>
 				<string>#9E9E9E</string>
 			</dict>
@@ -138,7 +138,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -155,8 +155,72 @@
 			<string>meta.type.name</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#94B8D7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>entity.name.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bce1ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>entity.name.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bce1ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.body entity.name.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#94B8D7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.body entity.name.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#94B8D7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.field.declaration.ts meta.type.name.ts</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2E505C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>fontStyle</key>
+			<string>italic</string>
+			<key>foreground</key>
+			<string>#75a1b3</string>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.type.parameters</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -164,6 +228,72 @@
 			<string>meta.type.parameters meta.type.name</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.type.annotation</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.type.annotation meta.type.name</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#2d7387</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.type.annotation meta.type.primitive storage.type</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#2d7387</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>cast.expr meta.type.name</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.field.declaration storage.type</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#2E505C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.heritage storage.type</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#75a1b3</string>
 			</dict>
@@ -179,11 +309,105 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>meta.enum.declaration.ts storage.type.ts</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.type.parameter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.type.parameter meta.type.annotation meta.type.paren.cover meta.type.name</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.type.parameter meta.type.annotation meta.type.parameters meta.type.name</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.type.parameter meta.type.annotation meta.type.parameters entity.name.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.type.parameter meta.type.annotation meta.type.name</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.type.parameter constant</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.type.function.return meta.type.primitive storage.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.field.declaration variable.ts</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.declaration.object storage.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>entity</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -228,7 +452,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -237,7 +461,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -246,7 +470,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -291,7 +515,25 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#667E6A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>functioncall.expr.ts entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#667E6A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function-call entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -300,7 +542,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#415948</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -309,7 +551,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#415948</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -318,7 +560,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#415948</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -327,7 +569,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -336,7 +578,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#415948</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -426,7 +668,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#75a1b3</string>
+				<string>#94B8D7</string>
 			</dict>
 		</dict>
 		<dict>
@@ -435,7 +677,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9466CB</string>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
@@ -444,7 +686,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#bce1ff</string>
+				<string>#854147</string>
 			</dict>
 		</dict>
 		<dict>
@@ -557,6 +799,15 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>constant.language.super</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bce1ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>variable.language.this</string>
 			<key>settings</key>
 			<dict>
@@ -611,38 +862,11 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#854147</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>punctuation.definition.string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#854147</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
 			<string>entity.name.type.tuple, punctuation.definition.tuple</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#75a1b3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>string punctuation.expression</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -687,7 +911,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#854147</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -696,7 +920,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#bce1ff</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -705,7 +929,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#854147</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -732,7 +956,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#B0A385</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -741,7 +965,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#B0A385</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -750,7 +974,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#B0A385</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -759,7 +983,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#B0A385</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -782,7 +1006,106 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>meta.object.heritage.ts keyword.other.ts</string>
+			<string>meta.method-call.super.ts functioncall.expr.ts entity.name.function.ts</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.dot-access       variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2E505C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.dot-access.final variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#518A9D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.member          entity.name.variable.ts</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#518A9D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.member.function entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#667E6A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.member meta.dot-access       variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2E505C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.member meta.dot-access.final variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#518A9D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.heritage keyword.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.other.cast</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.other.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>keyword.other.method</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -795,12 +1118,21 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2d7387</string>
+				<string>#2E505C</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>scope</key>
 			<string>variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#518A9D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.var.expr.ts variable.ts</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -813,7 +1145,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9466CB</string>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
@@ -822,7 +1154,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
@@ -831,7 +1163,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9466CB</string>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
@@ -840,16 +1172,25 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9466CB</string>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>string, constant.string</string>
+			<string>constant.string</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#854147</string>
+				<string>#866CA4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
@@ -863,20 +1204,56 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>entity.name.function.decorator.python</string>
+			<string>punctuation.definition.string</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>tag.decorator.js entity.name.tag.js</string>
+			<string>punctuation.definition.string</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#658F7A</string>
+				<string>#866CA4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>string punctuation.expression</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>entity.name.function.decorator.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>tag.decorator entity.name.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>tag.decorator entity.name.tag variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -903,7 +1280,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9466CB</string>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
@@ -921,7 +1298,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9466CB</string>
+				<string>#866CA4</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1151,7 +1528,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#9466CB</string>
+				<string>#866CA4</string>
 				<key>xforeground</key>
 				<string>#8996A8</string>
 			</dict>
