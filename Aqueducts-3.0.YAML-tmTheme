@@ -8,14 +8,15 @@ colors:
 - &c-skyBlue '#CBEFFE'
 
 - &c-slateGreen '#436575'
-- &c-turquoise '#4B7982'
+- &c-turquoise2 '#345961'
+# - &c-turquoise2 '#4B7982'
 - &c-burntTurquoise '#73aea9'
 
 - &c-pomegranate '#c45965'
 - &c-adobe '#BA7F98'
 
 - &c-tangerine '#FF8D3D'
-- &c-goldenrod2 '#d2aa5d'
+# - &c-goldenrod2 '#d2aa5d'
 
 - &c-indigo '#7406E7'
 - &c-periwinkle '#A36BCE'
@@ -27,12 +28,15 @@ color-scheme:
 # *c-darkGreenSea
 - &c-blue-bg '#0A171B'
 # *c-shallowPond
-- &c-blue-1 '#052029'
+# - &c-blue-bg-dark '#091F28'
+- &c-blue-bg-dark '#0B212A'
+# - &c-blue-bg-dark '#052029'
 # *c-murkyBlue
 - &c-blue-plain-text '#2d7387'
 # *c-slateGreen
 - &c-green-dark '#2E505C'
-- &c-blue-2 '#518A9D'
+- &c-blue-1 '#2F5C75'
+- &c-blue-2 '#42788D'
 # *c-slateBlue
 - &c-blue-3 '#75a1b3'
 - &c-blue-4 '#94B8D7'
@@ -63,16 +67,16 @@ color-scheme:
 - &c-white-dark '#6b675b'
 
 
-# - &c-lightBlue '#6eaace'
-# - &c-blood '#733741'
-# - &c-goldenrod '#f3c542'
-# - &c-goldenrod2 '#d2aa5d'
-# - &c-goldenrod3 '#b39150'
-# - &c-electricBlue '#2d9ac9'
-# - &c-indigo2 '#786dff'
-# - &c-darkBlueSea '#003448'
-# - &c-turquoise '#62aeb3'
-# - &c-grey '#56707A'
+- &c-lightBlue '#6eaace'
+- &c-blood '#733741'
+- &c-goldenrod '#f3c542'
+- &c-goldenrod2 '#d2aa5d'
+- &c-goldenrod3 '#b39150'
+- &c-electricBlue '#2d9ac9'
+- &c-indigo2 '#786dff'
+- &c-darkBlueSea '#003448'
+- &c-turquoise '#62aeb3'
+- &c-grey '#56707A'
 
 settings:
 - settings:
@@ -83,16 +87,15 @@ settings:
     lineHighlight   : '#0085b733'
     selection       : '#9E9E9E'
 
-# - { scope: meta.function.body, settings: { background: *c-blue-1 } }
-
 #
 # comment
 #
 
-- { scope: comment,       settings: { fontStyle: italic, foreground: *c-white-dark } }
-- { scope: comment.block, settings: { background: *c-blue-1 } }
-- { scope: comment.block.python string.quoted.double.block.python, settings: { fontStyle: italic, foreground: *c-white-dark } }
-- { scope: comment.block.python punctuation.definition.string, settings: { fontStyle: italic, foreground: *c-white-dark } }
+- { scope: comment,       settings: { fontStyle: italic, foreground: *c-white-dark, background: *c-blue-bg-dark } }
+- { scope: comment.block, settings: { background: *c-blue-bg-dark } }
+- { scope: comment.block.python string.quoted.double.block.python, settings: { fontStyle: italic, foreground: *c-white-dark, background: *c-blue-bg-dark } }
+- { scope: comment.block.python punctuation.definition.string, settings: { fontStyle: italic, foreground: *c-white-dark, background: *c-blue-bg-dark } }
+- { scope: comment keyword.comment, settings: { fontStyle: italic, foreground: *c-yellow-dark } }
 
 #
 # meta
@@ -117,6 +120,7 @@ settings:
 # - { scope: meta.type.name.generic-parameter, settings: { foreground: '#3594cc' } }
 
 - { scope: meta.field.declaration.ts meta.type.name.ts, settings: { foreground: *c-green-dark } }
+- { scope: meta.field.declaration.tsx meta.type.name.tsx, settings: { foreground: *c-green-dark } }
 
 - &s-TypeName {
     fontStyle: italic,
@@ -148,6 +152,7 @@ settings:
 
 # typescript
 - { scope: meta.enum.declaration.ts storage.type.ts, settings: { foreground: *c-white-dark } }
+- { scope: meta.enum.declaration.tsx storage.type.tsx, settings: { foreground: *c-white-dark } }
 
 - { scope: meta.function.type.parameter, settings: { foreground: *c-white-dark } }
 
@@ -159,7 +164,22 @@ settings:
 - { scope: meta.function.type.parameter constant, settings: { foreground: *c-white-dark } }
 - { scope: meta.type.function.return meta.type.primitive storage.type, settings: { foreground: *c-white-dark } }
 - { scope: meta.field.declaration variable.ts, settings: { foreground: *c-blue-3 } }
+- { scope: meta.field.declaration variable.tsx, settings: { foreground: *c-blue-3 } }
 - { scope: meta.declaration.object storage.type, settings: { foreground: *c-white-dark } }
+
+# go
+- { scope: source.go keyword.control.go, settings: { foreground: *c-white-dark } }
+- { scope: support.function.any-method.go, settings: { foreground: *c-green-light } }
+
+- { scope: meta.function.receiver.go keyword.control.go, settings: { foreground: *c-white-dark } }
+- { scope: meta.function.receiver.go meta.block.go keyword.control.go, settings: { foreground: *c-red-dark } }
+- { scope: meta.function.plain.go keyword.control.go, settings: { foreground: *c-white-dark } }
+- { scope: meta.function.plain.go meta.block.go keyword.control.go, settings: { foreground: *c-red-dark } }
+- { scope: meta.block.go keyword.control.go, settings: { foreground: *c-red-dark } }
+
+- { scope: variable.receiver.go, settings: { foreground: *c-white-light } }
+- { scope: variable.exported.go, settings: { foreground: *c-blue-3 } }
+- { scope: variable.return-types.go, settings: { foreground: *c-blue-3 } }
 
 
 
@@ -173,9 +193,17 @@ settings:
 - { scope: entity.name.parameter.function,     settings: { foreground: *c-yellow-dark } }
 - { scope: entity.name.parameter.function.internal,     settings: { foreground: *c-blue-plain-text } }
 
+# python
+- { scope: variable.parameter.function,     settings: { foreground: *c-white-dark } }
+- { scope: variable.parameter.function.keyword,     settings: { foreground: *c-white-dark } }
+- { scope: meta.function.decorator.arguments.python variable.parameter.function.keyword,     settings: { foreground: *c-blue-2 } }
+- { scope: meta.function.parameters.python variable.parameter.function,         settings: { foreground: *c-blue-2 } }
+- { scope: meta.function.parameters.python variable.parameter.function.keyword, settings: { foreground: *c-blue-2 } }
+
 - { scope: meta.function.body      entity.name.function,           settings:  { foreground: *c-green-light } }
 - { scope: meta.function.body      entity.name.parameter.function, settings:  { foreground: *c-green-light } }
 - { scope: meta.function.body      entity.name.parameter.subscript, settings: { foreground: *c-green-light } }
+
 
 - { scope: meta.function.parameter-list.declaration   meta.type.name,           settings: { foreground: *c-blue-4 } }
 
@@ -184,7 +212,12 @@ settings:
 - { scope: meta.protocol.body      entity.name.parameter.subscript, settings: { foreground: *c-yellow-dark } }
 
 - { scope: meta.function-call,            settings: { foreground: *c-green-light } }
+
+# python
+- { scope: meta.function-call.generic,            settings: { foreground: *c-green-light } }
+
 - { scope: functioncall.expr.ts entity.name.function,            settings: { foreground: *c-green-light } }
+- { scope: functioncall.expr.tsx entity.name.function,            settings: { foreground: *c-green-light } }
 - { scope: meta.function-call entity.name.function,            settings: { foreground: *c-green-light } }
 - { scope: meta.function-call meta.function-call entity.name.function,            settings: { foreground: *c-green-light } }
 - { scope: meta.function-call meta.function-call entity.name.parameter.function,  settings: { foreground: *c-green-light } }
@@ -203,7 +236,10 @@ settings:
 
 - { scope: entity.name.tag.js, settings: { foreground: *c-blue-3 } }
 - { scope: entity.other.attribute-name.js, settings: { foreground: *c-blue-2 } }
+- { scope: entity.other.attribute-name.tsx, settings: { foreground: *c-blue-1 } }
 - { scope: meta.tag.attribute-name.js, settings: { foreground: *c-blue-2 } }
+- { scope: meta.jsx.children.tsx constant.language.this, settings: { foreground: *c-green-dark } }
+- { scope: tag.open.tsx constant.language.this, settings: { foreground: *c-green-dark } }
 
 
 #
@@ -224,7 +260,7 @@ settings:
 
 - { scope: keyword,                settings: { foreground: *c-red-dark } }
 - { scope: keyword.meta,           settings: { foreground: *c-red-dark } }
-- { scope: keyword.declaration,    settings: { foreground: *c-red-dark } }
+- { scope: keyword.declaration,    settings: { foreground: *c-white-dark } }
 - { scope: keyword.function,       settings: { foreground: *c-yellow-dark } }
 - { scope: keyword.control,        settings: { foreground: *c-red-dark } }
 - { scope: keyword.variable,       settings: { foreground: *c-red-dark } }
@@ -277,14 +313,18 @@ settings:
 - { scope: storage.type.enum,      settings: { foreground: *c-white-dark } }
 
 - { scope: storage.modifier.ts,        settings: { foreground: *c-white-dark } }
+- { scope: storage.modifier.tsx,        settings: { foreground: *c-white-dark } }
 - { scope: storage.type.property.ts,  settings: { foreground: *c-white-dark } }
+- { scope: storage.type.property.tsx,  settings: { foreground: *c-white-dark } }
 
 # moar typescript
 - { scope: meta.method-call.super.ts functioncall.expr.ts entity.name.function.ts, settings: { foreground: *c-white-dark } }
+- { scope: meta.method-call.super.tsx functioncall.expr.tsx entity.name.function.tsx, settings: { foreground: *c-white-dark } }
 - { scope: meta.dot-access       variable, settings: { foreground: *c-green-dark } }
 - { scope: meta.dot-access.final variable, settings: { foreground: *c-blue-2 } }
 
 - { scope: meta.object.member          entity.name.variable.ts,  settings: { foreground: *c-blue-2 } }
+- { scope: meta.object.member          entity.name.variable.tsx,  settings: { foreground: *c-blue-2 } }
 - { scope: meta.object.member.function entity.name.function,    settings: { foreground: *c-green-light } }
 
 - { scope: meta.object.member meta.dot-access       variable, settings: { foreground: *c-green-dark } }
@@ -304,6 +344,7 @@ settings:
 - { scope: variable.other.readwrite, settings: { foreground: *c-green-dark } }
 - { scope: variable, settings: { foreground: *c-blue-2 } }
 - { scope: meta.var.expr.ts variable.ts, settings: { foreground: *c-blue-3 } }
+- { scope: meta.var.expr.tsx variable.tsx, settings: { foreground: *c-blue-3 } }
 
 
 
@@ -498,22 +539,14 @@ settings:
     fontStyle: ''
     foreground: '#8F9D6A'
 
-- name: "\xA7 css#id"
-  scope: meta.selector.css entity.other.attribute-name.id
-  settings:
-    fontStyle: ''
-    foreground: '#8B98AB'
-
-- name: "\xA7 css.class"
-  scope: meta.selector.css entity.other.attribute-name.class
-  settings:
-    fontStyle: ''
-    foreground: '#62B1FE'
-
-- name: "\xA7 css property-name:"
-  scope: support.type.property-name.css
-  settings:
-    foreground: *c-blue-plain-text
+# CSS ids
+- { scope: meta.selector.css entity.other.attribute-name.id, settings: { foreground: *c-blue-4 } }
+# CSS classes
+- { scope: meta.selector.css entity.other.attribute-name.class, settings: { foreground: *c-blue-3 } }
+# CSS properties
+- { scope: support.type.property-name.css, settings: { foreground: *c-blue-plain-text } }
+# CSS html elements
+- { scope: entity.name.tag.css, settings: { foreground: *c-red-dark } }
 
 - name: "\xA7 css property-value;"
   scope: meta.property-group support.constant.property-value.css, meta.property-value
@@ -600,14 +633,14 @@ settings:
 - name: 'Markup: List'
   scope: markup.list
   settings:
-    foreground: '#E1D4B9'
+    foreground: *c-blue-2
 
 - name: 'Markup: Raw'
   scope: markup.raw
   settings:
-    background: '#B1B3BA08'
-    fontStyle: ''
-    foreground: '#578BB3'
+    # background: '#B1B3BA08'
+    # fontStyle: ''
+    foreground: *c-green-medium
 
 - name: 'Markup: Comment'
   scope: markup comment

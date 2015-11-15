@@ -5,10 +5,11 @@
 	<key>color-scheme</key>
 	<array>
 		<string>#0A171B</string>
-		<string>#052029</string>
+		<string>#0B212A</string>
 		<string>#2d7387</string>
 		<string>#2E505C</string>
-		<string>#518A9D</string>
+		<string>#2F5C75</string>
+		<string>#42788D</string>
 		<string>#75a1b3</string>
 		<string>#94B8D7</string>
 		<string>#667E6A</string>
@@ -22,6 +23,16 @@
 		<string>#866CA4</string>
 		<string>#bce1ff</string>
 		<string>#6b675b</string>
+		<string>#6eaace</string>
+		<string>#733741</string>
+		<string>#f3c542</string>
+		<string>#d2aa5d</string>
+		<string>#b39150</string>
+		<string>#2d9ac9</string>
+		<string>#786dff</string>
+		<string>#003448</string>
+		<string>#62aeb3</string>
+		<string>#56707A</string>
 	</array>
 	<key>colors</key>
 	<array>
@@ -31,12 +42,11 @@
 		<string>#75a1b3</string>
 		<string>#CBEFFE</string>
 		<string>#436575</string>
-		<string>#4B7982</string>
+		<string>#345961</string>
 		<string>#73aea9</string>
 		<string>#c45965</string>
 		<string>#BA7F98</string>
 		<string>#FF8D3D</string>
-		<string>#d2aa5d</string>
 		<string>#7406E7</string>
 		<string>#A36BCE</string>
 		<string>#6b675b</string>
@@ -68,6 +78,8 @@
 			<string>comment</string>
 			<key>settings</key>
 			<dict>
+				<key>background</key>
+				<string>#0B212A</string>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
@@ -80,7 +92,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#052029</string>
+				<string>#0B212A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -88,6 +100,8 @@
 			<string>comment.block.python string.quoted.double.block.python</string>
 			<key>settings</key>
 			<dict>
+				<key>background</key>
+				<string>#0B212A</string>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
@@ -99,10 +113,23 @@
 			<string>comment.block.python punctuation.definition.string</string>
 			<key>settings</key>
 			<dict>
+				<key>background</key>
+				<string>#0B212A</string>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
 				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>comment keyword.comment</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#B0A385</string>
 			</dict>
 		</dict>
 		<dict>
@@ -129,7 +156,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#518A9D</string>
+				<string>#42788D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -200,6 +227,15 @@
 		<dict>
 			<key>scope</key>
 			<string>meta.field.declaration.ts meta.type.name.ts</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2E505C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.field.declaration.tsx meta.type.name.tsx</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -318,6 +354,15 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>meta.enum.declaration.tsx storage.type.tsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>meta.function.type.parameter</string>
 			<key>settings</key>
 			<dict>
@@ -394,11 +439,110 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>meta.field.declaration variable.tsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>meta.declaration.object storage.type</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>source.go keyword.control.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.any-method.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#667E6A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.receiver.go keyword.control.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.receiver.go meta.block.go keyword.control.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#854147</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.plain.go keyword.control.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.plain.go meta.block.go keyword.control.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#854147</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.block.go keyword.control.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#854147</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>variable.receiver.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bce1ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>variable.exported.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>variable.return-types.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#75a1b3</string>
 			</dict>
 		</dict>
 		<dict>
@@ -444,6 +588,51 @@
 			<dict>
 				<key>foreground</key>
 				<string>#2d7387</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>variable.parameter.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>variable.parameter.function.keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.decorator.arguments.python variable.parameter.function.keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#42788D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.parameters.python variable.parameter.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#42788D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.function.parameters.python variable.parameter.function.keyword</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#42788D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -520,7 +709,25 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>meta.function-call.generic</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#667E6A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>functioncall.expr.ts entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#667E6A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>functioncall.expr.tsx entity.name.function</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -623,7 +830,16 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#518A9D</string>
+				<string>#42788D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>entity.other.attribute-name.tsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2F5C75</string>
 			</dict>
 		</dict>
 		<dict>
@@ -632,7 +848,25 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#518A9D</string>
+				<string>#42788D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.jsx.children.tsx constant.language.this</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2E505C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>tag.open.tsx constant.language.this</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2E505C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -704,7 +938,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#854147</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -997,6 +1231,15 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>storage.modifier.tsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>storage.type.property.ts</string>
 			<key>settings</key>
 			<dict>
@@ -1006,7 +1249,25 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>storage.type.property.tsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>meta.method-call.super.ts functioncall.expr.ts entity.name.function.ts</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.method-call.super.tsx functioncall.expr.tsx entity.name.function.tsx</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -1028,7 +1289,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#518A9D</string>
+				<string>#42788D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1037,7 +1298,16 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#518A9D</string>
+				<string>#42788D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.object.member          entity.name.variable.tsx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#42788D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1064,7 +1334,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#518A9D</string>
+				<string>#42788D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1127,12 +1397,21 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#518A9D</string>
+				<string>#42788D</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>scope</key>
 			<string>meta.var.expr.ts variable.ts</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.var.expr.tsx variable.tsx</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -1199,7 +1478,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#518A9D</string>
+				<string>#42788D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1630,40 +1909,39 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>name</key>
-			<string>§ css#id</string>
 			<key>scope</key>
 			<string>meta.selector.css entity.other.attribute-name.id</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#8B98AB</string>
+				<string>#94B8D7</string>
 			</dict>
 		</dict>
 		<dict>
-			<key>name</key>
-			<string>§ css.class</string>
 			<key>scope</key>
 			<string>meta.selector.css entity.other.attribute-name.class</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#62B1FE</string>
+				<string>#75a1b3</string>
 			</dict>
 		</dict>
 		<dict>
-			<key>name</key>
-			<string>§ css property-name:</string>
 			<key>scope</key>
 			<string>support.type.property-name.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#2d7387</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>entity.name.tag.css</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#854147</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1849,7 +2127,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E1D4B9</string>
+				<string>#42788D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1859,12 +2137,8 @@
 			<string>markup.raw</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>#B1B3BA08</string>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#578BB3</string>
+				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
