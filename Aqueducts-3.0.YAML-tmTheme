@@ -1,3 +1,4 @@
+# [PackageDev] target_format: plist, ext: tmTheme
 ---
 name: Aqueducts-3.0
 colors:
@@ -25,36 +26,31 @@ colors:
 - &c-mintWhite '#bce1ff'
 
 color-scheme:
-# *c-darkGreenSea
 - &c-blue-bg '#0A171B'
-# *c-shallowPond
+# - &c-blue-bg-dark '#0B212A'
+- &c-blue-bg-dark '#122937'
 # - &c-blue-bg-dark '#091F28'
-- &c-blue-bg-dark '#0B212A'
 # - &c-blue-bg-dark '#052029'
-# *c-murkyBlue
 - &c-blue-plain-text '#2d7387'
-# *c-slateGreen
-- &c-green-dark '#2E505C'
 - &c-blue-1 '#2F5C75'
 - &c-blue-2 '#42788D'
-# *c-slateBlue
 - &c-blue-3 '#75a1b3'
 - &c-blue-4 '#94B8D7'
 
-# *c-burntTurquoise
+- &c-green-dark '#2F596C'
 - &c-green-light '#667E6A'
-# *c-turquoise
-- &c-green-medium '#667E6A'
+- &c-green-medium '#4A6763'
+- &c-green-medium-bg '#4A676322'
+# - &c-green-light '#667E6A'
+# - &c-green-medium '#4A6763'
+# - &c-green-dark '#2E505C'
 
-# *c-adobe
-- &c-red-light '#BA7F98'
-# *c-pomegranate
+# - &c-red-light '#BA7F98'
 - &c-red-dark '#854147'
+- &c-red-light '#A35F82'
 
-# *c-goldenrod2
 - &c-yellow-light '#d2aa5d'
 - &c-yellow-dark '#B0A385'
-# *c-tangerine
 - &c-orange '#FF8D3D'
 
 # *c-periwinkle
@@ -104,7 +100,7 @@ settings:
 - { scope: meta.return-type,               settings: { foreground: *c-white-light } }
 - { scope: meta.import storage.modifier,   settings: { foreground: *c-white-light } }
 - { scope: meta.function-call.arguments, settings: { foreground: *c-blue-2 } }
-- { scope: meta.function-call.argument.name, settings: { foreground: *c-green-medium } }
+- { scope: meta.function-call.argument.name, settings: { foreground: *c-green-light } }
 
 # moved over from entity.name.type
 - { scope: meta.identifier meta.type.name,                   settings: { foreground: *c-white-light } }
@@ -119,6 +115,7 @@ settings:
 # - { scope: meta.type.name.class,             settings: { foreground: *c-blue-4 } }
 # - { scope: meta.type.name.generic-parameter, settings: { foreground: '#3594cc' } }
 
+# - { scope: meta.declaration.object.ts, settings: { background: *c-green-medium-bg } }
 - { scope: meta.field.declaration.ts meta.type.name.ts, settings: { foreground: *c-green-dark } }
 - { scope: meta.field.declaration.tsx meta.type.name.tsx, settings: { foreground: *c-green-dark } }
 
@@ -168,12 +165,19 @@ settings:
 - { scope: meta.declaration.object storage.type, settings: { foreground: *c-white-dark } }
 
 # go
-- { scope: source.go keyword.control.go, settings: { foreground: *c-white-dark } }
+- { scope: meta.definition.struct-field entity.name.type, settings: { foreground: *c-white-dark } }
+- { scope: entity.name.type entity.name.package, settings: { foreground: *c-white-dark } }
+- { scope: storage.type.go entity.name.package.go, settings: { foreground: *c-green-dark } }
+
+- { scope: source.go keyword.control.go, settings: { foreground: *c-red-dark } }
+- { scope: support.function.go, settings: { foreground: *c-green-light } }
+- { scope: support.function.builtin.go, settings: { foreground: *c-white-light } }
 - { scope: support.function.any-method.go, settings: { foreground: *c-green-light } }
 
-- { scope: meta.function.receiver.go keyword.control.go, settings: { foreground: *c-white-dark } }
+- { scope: meta.definition.struct.go entity.name.type.go, settings: { foreground: *c-blue-3 } }
+- { scope: meta.function.receiver.go keyword.control.go, settings: { foreground: *c-red-dark } }
 - { scope: meta.function.receiver.go meta.block.go keyword.control.go, settings: { foreground: *c-red-dark } }
-- { scope: meta.function.plain.go keyword.control.go, settings: { foreground: *c-white-dark } }
+- { scope: meta.function.plain.go keyword.control.go, settings: { foreground: *c-red-dark } }
 - { scope: meta.function.plain.go meta.block.go keyword.control.go, settings: { foreground: *c-red-dark } }
 - { scope: meta.block.go keyword.control.go, settings: { foreground: *c-red-dark } }
 
@@ -187,7 +191,7 @@ settings:
 # entity
 #
 
-- { scope: entity,                             settings: { foreground: *c-green-medium } }
+# - { scope: entity,                             settings: { foreground: *c-green-light } }
 - { scope: entity.name.function,               settings: { foreground: *c-yellow-dark } }
 - { scope: entity.name.method,                 settings: { foreground: *c-yellow-dark } }
 - { scope: entity.name.parameter.function,     settings: { foreground: *c-yellow-dark } }
@@ -211,7 +215,6 @@ settings:
 - { scope: meta.protocol.body      entity.name.parameter.function, settings:  { foreground: *c-yellow-dark } }
 - { scope: meta.protocol.body      entity.name.parameter.subscript, settings: { foreground: *c-yellow-dark } }
 
-- { scope: meta.function-call,            settings: { foreground: *c-green-light } }
 
 # python
 - { scope: meta.function-call.generic,            settings: { foreground: *c-green-light } }
@@ -353,7 +356,7 @@ settings:
 #
 
 - { scope: constant,                   settings: { foreground: *c-purple-dark } }
-# - { scope: constant.other,             settings: { foreground: *c-green-medium } }
+# - { scope: constant.other,             settings: { foreground: *c-green-light } }
 - { scope: constant.other,             settings: { foreground: *c-purple-dark } }
 - { scope: constant.other.placeholder, settings: { foreground: *c-purple-dark } }
 - { scope: constant.numeric,           settings: { foreground: *c-purple-dark } }
@@ -445,9 +448,7 @@ settings:
 
 - name: String embedded-variable
   scope: string meta.expression
-  settings:
-    fontStyle: ''
-    foreground: '#00A0A0'
+  settings: { foreground: *c-orange, fontStyle: italic }
 
 - name: String punctuation
   scope: source string source punctuation.section.embedded
@@ -640,7 +641,7 @@ settings:
   settings:
     # background: '#B1B3BA08'
     # fontStyle: ''
-    foreground: *c-green-medium
+    foreground: *c-green-light
 
 - name: 'Markup: Comment'
   scope: markup comment

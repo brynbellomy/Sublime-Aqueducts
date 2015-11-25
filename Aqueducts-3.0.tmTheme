@@ -5,17 +5,18 @@
 	<key>color-scheme</key>
 	<array>
 		<string>#0A171B</string>
-		<string>#0B212A</string>
+		<string>#122937</string>
 		<string>#2d7387</string>
-		<string>#2E505C</string>
 		<string>#2F5C75</string>
 		<string>#42788D</string>
 		<string>#75a1b3</string>
 		<string>#94B8D7</string>
+		<string>#2F596C</string>
 		<string>#667E6A</string>
-		<string>#667E6A</string>
-		<string>#BA7F98</string>
+		<string>#4A6763</string>
+		<string>#4A676322</string>
 		<string>#854147</string>
+		<string>#A35F82</string>
 		<string>#d2aa5d</string>
 		<string>#B0A385</string>
 		<string>#FF8D3D</string>
@@ -64,7 +65,7 @@
 				<key>caret</key>
 				<string>#FF8D3D</string>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 				<key>invisibles</key>
 				<string>#BFBFBF</string>
 				<key>lineHighlight</key>
@@ -79,7 +80,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#0B212A</string>
+				<string>#122937</string>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
@@ -92,7 +93,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#0B212A</string>
+				<string>#122937</string>
 			</dict>
 		</dict>
 		<dict>
@@ -101,7 +102,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#0B212A</string>
+				<string>#122937</string>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
@@ -114,7 +115,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#0B212A</string>
+				<string>#122937</string>
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
@@ -230,7 +231,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -239,7 +240,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -320,7 +321,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -457,11 +458,56 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>source.go keyword.control.go</string>
+			<string>meta.definition.struct-field entity.name.type</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>entity.name.type entity.name.package</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>storage.type.go entity.name.package.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#2F596C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>source.go keyword.control.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#854147</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#667E6A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.builtin.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bce1ff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -475,11 +521,20 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>meta.definition.struct.go entity.name.type.go</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#75a1b3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>meta.function.receiver.go keyword.control.go</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6b675b</string>
+				<string>#854147</string>
 			</dict>
 		</dict>
 		<dict>
@@ -497,7 +552,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6b675b</string>
+				<string>#854147</string>
 			</dict>
 		</dict>
 		<dict>
@@ -543,15 +598,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#75a1b3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>entity</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -696,15 +742,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#B0A385</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.function-call</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#667E6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -857,7 +894,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -866,7 +903,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1280,7 +1317,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1325,7 +1362,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1388,7 +1425,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2E505C</string>
+				<string>#2F596C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1716,9 +1753,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>italic</string>
 				<key>foreground</key>
-				<string>#00A0A0</string>
+				<string>#FF8D3D</string>
 			</dict>
 		</dict>
 		<dict>
