@@ -33,13 +33,16 @@ color-scheme:
 # - &c-blue-bg-dark '#052029'
 - &c-blue-plain-text '#2d7387'
 - &c-blue-1 '#2F5C75'
-- &c-blue-2 '#42788D'
+- &c-blue-2 '#4A879E'
 - &c-blue-3 '#75a1b3'
 - &c-blue-4 '#94B8D7'
 
-- &c-green-dark '#2F596C'
-- &c-green-light '#667E6A'
+- &c-green-dark '#35657A'
+# - &c-green-light '#667E6A'
+- &c-green-light '#647755'
+# - &c-green-light '#7b8c69'
 - &c-green-medium '#4A6763'
+# - &c-green-medium '#4A6763'
 - &c-green-medium-bg '#4A676322'
 # - &c-green-light '#667E6A'
 # - &c-green-medium '#4A6763'
@@ -47,7 +50,7 @@ color-scheme:
 
 # - &c-red-light '#BA7F98'
 - &c-red-dark '#854147'
-- &c-red-light '#A35F82'
+- &c-red-light '#91697f'
 
 - &c-yellow-light '#d2aa5d'
 - &c-yellow-dark '#B0A385'
@@ -121,7 +124,7 @@ settings:
 
 - &s-TypeName {
     fontStyle: italic,
-    foreground: *c-blue-3
+    foreground: *c-white-dark
 }
 
 - { scope: meta.type.parameters, settings: { foreground: *c-white-dark, fontStyle: italic } }
@@ -131,10 +134,10 @@ settings:
   settings: { foreground: *c-white-dark }
 
 - scope: meta.type.annotation meta.type.name
-  settings: { <<: *s-TypeName, foreground: *c-blue-plain-text }
+  settings: { <<: *s-TypeName, foreground: *c-white-dark }
 
 - scope: meta.type.annotation meta.type.primitive storage.type
-  settings: { <<: *s-TypeName, foreground: *c-blue-plain-text }
+  settings: { <<: *s-TypeName, foreground: *c-white-dark }
 
 - { scope: cast.expr meta.type.name, settings: *s-TypeName }
 - { scope: meta.field.declaration storage.type, settings: { foreground: *c-green-dark, fontStyle: italic } }
@@ -166,13 +169,23 @@ settings:
 
 # go
 - { scope: meta.definition.struct-field entity.name.type, settings: { foreground: *c-white-dark } }
+
+- { scope: string.tag.struct-field.go punctuation.definition.struct-tag.go, settings: { foreground: *c-green-dark } }
+
+- { scope: punctuation.definition.struct-tag.flag.go, settings: { foreground: *c-white-dark } }
+- { scope: entity.name.struct-tag.flag.go, settings: { foreground: *c-yellow-dark } }
+
+- { scope: entity.name.package, settings: { foreground: *c-white-dark } }
 - { scope: entity.name.type entity.name.package, settings: { foreground: *c-white-dark } }
-- { scope: storage.type.go entity.name.package.go, settings: { foreground: *c-green-dark } }
+- { scope: meta.literal.struct.go entity.name.package.go, settings: { foreground: *c-green-dark } }
+- { scope: meta.declaration.struct.go storage.type.go entity.name.package.go, settings: { foreground: *c-green-dark } }
+- { scope: meta.declaration.interface.go storage.type.go entity.name.package.go, settings: { foreground: *c-green-dark } }
 
 - { scope: source.go keyword.control.go, settings: { foreground: *c-red-dark } }
 - { scope: support.function.go, settings: { foreground: *c-green-light } }
-- { scope: support.function.builtin.go, settings: { foreground: *c-white-light } }
+- { scope: support.function.builtin.go, settings: { foreground: *c-white-dark } }
 - { scope: support.function.any-method.go, settings: { foreground: *c-green-light } }
+- { scope: support.function.builtin.ginkgo.go, settings: { foreground: *c-white-dark } }
 
 - { scope: meta.definition.struct.go entity.name.type.go, settings: { foreground: *c-blue-3 } }
 - { scope: meta.function.receiver.go keyword.control.go, settings: { foreground: *c-red-dark } }
@@ -252,7 +265,6 @@ settings:
 - { scope: support,          settings: { foreground: *c-blue-3 } }
 - { scope: support.type,     settings: { foreground: *c-blue-3 } }
 - { scope: support.class,    settings: { foreground: *c-blue-3 } }
-- { scope: support.function, settings: { foreground: *c-blue-4 } }
 - { scope: support.constant, settings: { foreground: *c-purple-dark } }
 
 
@@ -268,22 +280,23 @@ settings:
 - { scope: keyword.control,        settings: { foreground: *c-red-dark } }
 - { scope: keyword.variable,       settings: { foreground: *c-red-dark } }
 - { scope: keyword.operator,       settings: { foreground: *c-white-dark } }
+- { scope: keyword.other,     settings: { foreground: *c-white-dark } }
 - { scope: keyword.other.unit,     settings: { foreground: *c-white-dark } }
 - { scope: keyword.control.import, settings: { foreground: *c-white-dark } }
 - { scope: keyword.other.import, settings: { foreground: *c-white-dark } }
 
 # 'self' / 'this'
 #     -> swift/objc
-- { scope: keyword.object.self, settings: { foreground: *c-white-light } }
-- { scope: keyword.object.super, settings: { foreground: *c-white-light } }
+- { scope: keyword.object.self, settings: { foreground: *c-white-dark } }
+- { scope: keyword.object.super, settings: { foreground: *c-white-dark } }
 #     -> typescript
-- { scope: constant.language.this, settings: { foreground: *c-white-light } }
-- { scope: constant.language.super, settings: { foreground: *c-white-light } }
+- { scope: constant.language.this, settings: { foreground: *c-white-dark } }
+- { scope: constant.language.super, settings: { foreground: *c-white-dark } }
 #     -> js next
-- { scope: variable.language.this, settings: { foreground: *c-white-light } }
-- { scope: variable.language.super, settings: { foreground: *c-white-light } }
+- { scope: variable.language.this, settings: { foreground: *c-white-dark } }
+- { scope: variable.language.super, settings: { foreground: *c-white-dark } }
 #     -> python
-- { scope: variable.language.python, settings: { foreground: *c-white-light } }
+- { scope: variable.language.python, settings: { foreground: *c-white-dark } }
 
 
 #
@@ -334,6 +347,9 @@ settings:
 - { scope: meta.object.member meta.dot-access.final variable, settings: { foreground: *c-blue-2 } }
 
 
+- { scope: support.function.ts, settings: { foreground: *c-green-light } }
+- { scope: support.function.tsx, settings: { foreground: *c-green-light } }
+
 - { scope: meta.object.heritage keyword.other,  settings: { foreground: *c-white-dark } }
 - { scope: keyword.other,  settings: { foreground: *c-white-dark } }
 - { scope: keyword.other.cast,  settings: { foreground: *c-white-dark } }
@@ -346,8 +362,8 @@ settings:
 
 - { scope: variable.other.readwrite, settings: { foreground: *c-green-dark } }
 - { scope: variable, settings: { foreground: *c-blue-2 } }
-- { scope: meta.var.expr.ts variable.ts, settings: { foreground: *c-blue-3 } }
-- { scope: meta.var.expr.tsx variable.tsx, settings: { foreground: *c-blue-3 } }
+- { scope: meta.var.expr.ts variable.ts, settings: { foreground: *c-blue-2 } }
+- { scope: meta.var.expr.tsx variable.tsx, settings: { foreground: *c-blue-2 } }
 
 
 
