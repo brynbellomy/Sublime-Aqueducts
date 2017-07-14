@@ -84,7 +84,7 @@ settings:
     caret           : *c-orange
     invisibles      : '#BFBFBF'
     lineHighlight   : '#0085b733'
-    selection       : '#9E9E9E'
+    selection       : '#0085b766'
 
 #
 # comment
@@ -100,7 +100,7 @@ settings:
 # meta
 #
 
-- { scope: meta.return-type,               settings: { foreground: *c-white-light } }
+- { scope: meta.return-type,               settings: { foreground: *c-white-dark } }
 - { scope: meta.import storage.modifier,   settings: { foreground: *c-white-light } }
 - { scope: meta.function-call.arguments, settings: { foreground: *c-blue-2 } }
 - { scope: meta.function-call.argument.name, settings: { foreground: *c-green-light } }
@@ -148,7 +148,7 @@ settings:
 #
 
 #objc
-- { scope: meta.function.objc, settings: { background: '#0085b750' } }
+# - { scope: meta.function.objc, settings: { background: '#0085b750' } }
 
 # typescript
 - { scope: meta.enum.declaration.ts storage.type.ts, settings: { foreground: *c-white-dark } }
@@ -182,9 +182,6 @@ settings:
 - { scope: meta.declaration.interface.go storage.type.go entity.name.package.go, settings: { foreground: *c-green-dark } }
 
 - { scope: source.go keyword.control.go, settings: { foreground: *c-red-dark } }
-- { scope: support.function.go, settings: { foreground: *c-green-light } }
-- { scope: support.function.builtin.go, settings: { foreground: *c-white-dark } }
-- { scope: support.function.any-method.go, settings: { foreground: *c-green-light } }
 - { scope: support.function.builtin.ginkgo.go, settings: { foreground: *c-white-dark } }
 
 - { scope: meta.definition.struct.go entity.name.type.go, settings: { foreground: *c-blue-3 } }
@@ -267,6 +264,9 @@ settings:
 - { scope: support.class,    settings: { foreground: *c-blue-3 } }
 - { scope: support.constant, settings: { foreground: *c-purple-dark } }
 
+- { scope: support.function, settings: { foreground: *c-green-light } }
+- { scope: support.function.builtin, settings: { foreground: *c-white-dark } }
+- { scope: support.function.any-method, settings: { foreground: *c-green-light } }
 
 
 #

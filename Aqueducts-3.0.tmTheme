@@ -71,7 +71,7 @@
 				<key>lineHighlight</key>
 				<string>#0085b733</string>
 				<key>selection</key>
-				<string>#9E9E9E</string>
+				<string>#0085b766</string>
 			</dict>
 		</dict>
 		<dict>
@@ -139,7 +139,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#bce1ff</string>
+				<string>#6b675b</string>
 			</dict>
 		</dict>
 		<dict>
@@ -333,15 +333,6 @@
 				<string>italic</string>
 				<key>foreground</key>
 				<string>#6b675b</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>meta.function.objc</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#0085b750</string>
 			</dict>
 		</dict>
 		<dict>
@@ -544,33 +535,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#854147</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>support.function.go</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#647755</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>support.function.builtin.go</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#6b675b</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>support.function.any-method.go</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#647755</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1003,6 +967,33 @@
 			<dict>
 				<key>foreground</key>
 				<string>#866CA4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#647755</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.builtin</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6b675b</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.any-method</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#647755</string>
 			</dict>
 		</dict>
 		<dict>
